@@ -1,0 +1,37 @@
+.wallet{
+    margin-bottom: 0;
+    font-weight: lighter;
+    color: white;
+    vertical-align: top;
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.currAmountSpan{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.currAmountInput{
+    height: 1.5rem;
+    text-align: center;
+    
+}
+
+span{
+    color: white;
+    font-weight: lighter;
+}
+
+
+
+@media (min-width:800px){
+    input{
+        width:100px;
+    }
+}
