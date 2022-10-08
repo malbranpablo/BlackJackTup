@@ -1,3 +1,8 @@
 <div class="container" style="text-align: center;">
-  <app-wallet></app-wallet> 
+  <br>
+  <app-wallet></app-wallet>
+  <div *ngIf="this.cardData.gameActive">
+      <app-main-area></app-main-area>
+  </div>
+  <app-buttons></app-buttons>
 </div>
