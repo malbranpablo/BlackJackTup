@@ -1,0 +1,10 @@
+.identity{
+    font-weight: lighter;
+    color: white;
+}
+
+.flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
