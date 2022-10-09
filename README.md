@@ -1,4 +1,16 @@
-# BackJackTup
+# Back Jack GAME - Universidad Tecnológia Nacional
+
+# Tecnicatura Universitaria en Programación UTN - FRC - 2022
+
+# Integrantes:
+- Cerdosino, Angeles - 110994
+- Malbrán, Pablo - 107485
+
+# Link a repositorio en GitHub
+https://github.com/malbranpablo/BlackJackTup/tree/main
+
+
+# Other Information
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
