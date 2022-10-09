@@ -1,0 +1,31 @@
+.cardDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left:1rem;
+    flex-wrap: wrap;
+    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+.cardDiv:hover {
+    box-shadow: 0 28px 56px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+img{
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+@media (min-width:200px){
+    .cardDiv{
+        height:10vh;
+    }
+}
+
+@media (min-width:800px){
+    .cardDiv{
+        height:15vh;
+    }
+}

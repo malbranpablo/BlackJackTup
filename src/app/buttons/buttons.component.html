@@ -1,0 +1,36 @@
+<div class="row flexBox">
+    <div *ngIf="this.cardData.gameActive">
+        <button [disabled]="this.cardData.gameResult !== ''" (click)="hit()" nz-button nzType="default">Tiro</button>
+        <button [disabled]="this.cardData.gameResult !== ''" (click)=stay() nz-button nzType="default">Paso</button>
+        <button [disabled]="this.cardData.gameResult === ''" (click)=reset() nz-button nzType="default">Reiniciar</button>
+    </div>
+
+    <nz-modal
+      nzWrapClassName="vertical-center-modal"
+      [(nzVisible)]="isVisibleMiddle"
+      nzTitle="Quiere apostar de nuevo?"
+      (nzOnCancel)="handleCancelMiddle()"
+      (nzOnOk)="handleOkMiddle()"
+    >
+      <div class="row">
+        
+        <div class="col-6">
+                <h6 class="wallet">Cartera</h6>
+            <span [textContent]="this.cardData.wallet | currency" class="currAmountSpan"></span>
+        </div>
+        <div class="col-6">
+            <h6 class="wallet">Apuesta Actual</h6>
+            
+            <input style="margin-top: 0.4rem" nz-input class="currAmountInput" *ngIf="!this.cardData.gameActive" id="currrentBet" 
+                #currentBet (input)="validateInput($event)" type="number" pattern="[0-9]*" inputmode="numeric" min="1" max="this.cardData.wallet" [(ngModel)]="this.cardData.bet">
+        </div>
+        
+      </div>
+    </nz-modal>
+    
+</div>
+<br>
+<div class="flexBox">
+    <h3 *ngIf="this.cardData.gameActive"  class="gameResult">{{this.cardData.gameResult}}</h3>
+    
+</div>

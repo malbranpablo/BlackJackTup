@@ -1,0 +1,20 @@
+<div>
+    <br>
+    <br>
+    <h3 class="identity">Dealer ({{this.cardData.dealerScore}})</h3>
+    <div class="row flexBox">
+        <ng-container *ngFor="let dealerCard of this.cardData.dealerCards">
+            <app-card [cardURL]="'./assets/cards/' + dealerCard + '.png'"></app-card>
+        </ng-container>
+    </div>
+    <br>
+    <h3 class="identity">Jugador ({{this.cardData.userScore}})</h3>
+    <div class="row flexBox">
+        <ng-container *ngFor="let userCard of this.cardData.userCards">
+            <app-card [cardURL]="'./assets/cards/' + userCard + '.png'"></app-card>
+        </ng-container>
+    </div>
+    <br>
+    <br>
+    
+</div>
