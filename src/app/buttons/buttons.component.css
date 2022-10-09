@@ -1,0 +1,57 @@
+::ng-deep .vertical-center-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+::ng-deep .vertical-center-modal .ant-modal {
+top: 0;
+}
+
+.flexBox{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.wallet{
+margin-bottom: 0;
+font-weight: lighter;
+color: black;
+vertical-align: top;
+}
+
+button{
+margin-left: 1rem;
+}
+
+.currAmountSpan{
+font-size: 1.5rem;
+margin-bottom: 2rem;
+
+}
+
+.currAmountInput{
+height: 1.5rem;
+text-align: center;
+
+}
+
+span{
+color: black;
+font-weight: lighter;
+}
+
+
+.gameResult{
+color:white; 
+font-weight: lighter;
+font-size: 2.5rem;
+}
+
+
+@media (min-width:800px){
+input{
+    width:100px;
+}
+}
